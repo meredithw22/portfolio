@@ -1,0 +1,171 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    height: 100vh;
+    gap: 20px;
+    padding: 0 40px;
+    grid-template-areas: ". content content content content .";
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 50px; 
+    background: linear-gradient(135deg, #E1C1ED 40%, #ffffff 20%, #ffffff 70%, #E1C1ED 5%);
+    /* Start #5cbcb0 from 0 and end at 5%, Start #fff at 5% and end at 15%, Start #5cbcb0 again at 15% and end at 100% */
+    background-repeat: no-repeat; /* To avoid multiple instances */
+}
+
+.content {
+grid-area: content;
+max-width: 1000px;
+width: 100%;
+}
+
+.content h1 {
+    margin-top: 3em;
+}
+
+.content h3 {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.brand-row{
+display: flex;
+text-align:center;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'HTML GIT JS WEB';
+
+}
+
+.grid-project-link {
+    margin-top: 4rem;
+}
+
+.project-link{
+    margin: 2rem;
+    justify-content: center;
+}
+
+
+.project-link-title {
+    text-align:center;
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+.img.invertocat {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.project-link-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    transition: 0.3s;
+    text-overflow: ellipsis;
+    background-color: #76487D;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+    
+}
+
+.project-link-box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+@media (max-width:1200px) {
+.grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+    height:fit-content;
+}
+
+
+.grid-project-link {
+        grid-template-columns: 1fr;
+        grid-template-areas: "content";
+        margin-top: 2px;
+        margin-left:2px;
+        margin-right:2px;
+        margin-bottom: 3px;
+        
+        
+    }
+.project-link-box {
+        margin-top: 2px;
+        margin-left:2px;
+        margin-right:2px;
+        justify-self: center;
+}
+
+    .project-link-title {
+        margin-top: 0.5em;
+        margin-left:0;
+        justify-self: center;
+    }
+    
+
+}
+
+/* media queries for desktop, tablet, and phone */
+
+@media (max-width:1000px) {
+
+    .project-link-box {
+        grid-template-columns: 1fr;
+        grid-template-areas: "HTML GIT JS WEBAPP";
+        
+    }
+}
+
+@media (max-width:800px) {
+   
+    .project-grid {
+        grid-template-rows: 1;
+    }
+
+    .project-link-box {
+        margin-top:2px;
+        
+    }
+    
+    .h1.brand-row {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .h3.welcome {
+        font-size:1em;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .h1.brand-row {
+        font-size: 2rem;
+        margin-left:0;
+        
+    }
+    .h3.welcome {
+        font-size:1rem;
+        margin-bottom:1px;
+    }
+
+    .project-link-box{
+        font-size:1.25rem;
+        
+    }
+}
