@@ -1,63 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Github pages</title>
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-eqive="X-UA-Compatible" content="ie-edge">
+  <title>MW Portfolio Website</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-  <div class="grid">
-    <div class="content">
-      <h1 class="brand-row">Meredith Waldock Web Developer</h1>
-      <h3 class="welcome">Welcome to my portfolio</h3>
-      <h3>Explore my projects</h3>
-
-      <main>
-        <section class="project-grid grid-project-link">
-          <div class="HTML-project-link">
-            <div class="project-link-title">
-              HTML/CSS
-            </div>
-            <div class="project-link-box">
-              <img class="html" src="images/GitHub-Logos/html.png" style="width:30%">
-            </div>
-          </div>
-          <div class="GIT-project-link">
-            <div class="project-link-title">
-              <a href="https://github.com/meredithw22" target="_blank">Github</a>
-            </div>
-            <div class="project-link-box">
-              <img class="invertocat" src="images/GitHub-Logos/github-mark-white.png" alt="github logo"
-                style="width:30%">
-            </div>
-          </div>
-          <div class="WB-project-link">
-            <div class="project-link-title">
-              WebFlow
-            </div>
-            <div class="project-link-box">
-              <p>webflow placeholder</p>
-            </div>
-          </div>
-          <div class="WEB-project-link">
-            <div class="project-link-title">
-              WebApp
-            </div>
-            <div class="project-link-box">
-              <p>webapp placeholder</p>
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
+ </head>
+ 
+ 
+ 
+ <!-- Navigation Section -->
+ <section id="navigation">
+  <div class="nav-icon">
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+   </svg>
   </div>
-  <script src="" async defer></script>
-</body>
+ </section>
+ <section id="nav-content">
+  <div class="close-btn">
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+   </svg>
+  </div>
+  <div class="wrapper">
+   <h2 class="section-heading" data-outline="Menu">Menu</h2>
+   <nav>
+    <ul>
+     <li><a data-text="Home" href="index.">Home</a></li>
+     <li><a data-text="About" href="index.html#about">About</a></li>
+     <li><a data-text="Projects" href="index.html#projects">Projects</a></li>
+     <!-- <li><a data-text="Testimonals  " href="./portfolio.html#testimonial">Testimonals</a></li> -->
+     <!-- <li><a data-text="Contact" href="./contact.html">Contact</a></li> -->
+    </ul>
+   </nav>
+  </div>
+ </section>
+ <!-- End Navigation -->
 
+
+ <body>
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top">
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
+   </svg>
+  </div>
+  <!-- End Scroll to Top Button -->
+
+
+  <!-- hero section -->
+  <section id="hero">
+   <div class="container">
+    <div class="left">
+     <p class="subheading">Meredith Waldock</p>
+     <h2 class="heading">
+      <div class="wrapper">
+       <span>Web</span>
+      </div>
+      <div class="wrapper">
+       <span>Developer</span>
+      </div>
+     </h2>
+     <p class="desc">Hi! I'm Meredith, welcome to my website!</p>
+     <div class="buttons">
+      <a href="#" class="primary-btn">Explore my Portfolio</a>
+      <a href="#">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+       </svg>
+     </div>
+    </div>
+    <div class="right">
+     <img src="dogportrait.jpg" alt="dog portrait">
+    </div>
+   </div>
+  </section>
+  <!-- end of hero section -->
+
+
+  <!-- Experience Section -->
+  <section id="experience">
+   <div class="container">
+    <h2 class="section-heading" data-outline="Experience">Experience</h2>
+    <div class="all-items">
+     <div class="item">
+      <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+       </svg>
+      </div>
+      <h3 class="item-heading">Full Stack</h3>
+      <p class="item-desc">Full stack web developer experienced in front-end and back-end technologies </p>
+     </div>
+     <div class="item">
+      <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+       </svg>
+      </div>
+      <h3 class="item-heading">Back End</h3>
+      <p class="item-desc">Database management, Server configuration and deployment </p>
+     </div>
+     <div class="item">
+      <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+       </svg>
+      </div>
+      <h3 class="item-heading">Front End Design</h3>
+      <p class="item-desc">Fully Responsive Website w/ HTML CSS JS</p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End of Experience Section -->
+
+
+  <!-- Testimonal Section -->
+  <!-- <section id="testimonial">
+   <div class="container">
+    <h1 class="section-heading" data-outline="Testimonial">Testimonial</h1>
+    <div class="all-items">
+     <div class="item">
+      <div class="img">
+       <img src="/practiceportfolio/dogportrait.jpg" alt="dog">
+      </div>
+      <h3 class="testimonial-heading">Tailor</h3>
+      <p class="testimonial-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque prae!</p>
+      <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+       </svg>
+      </div>
+     </div>
+     <div class="item">
+      <div class="img">
+       <img src="/practiceportfolio/dogportrait.jpg" alt="dog">
+      </div>
+      <h3 class="testimonial-heading">Tailor</h3>
+      <p class="testimonial-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque prae!</p>
+      <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+       </svg>
+      </div>
+     </div>
+     <div class="item">
+      <div class="img">
+       <img src="/practiceportfolio/dogportrait.jpg" alt="dog">
+      </div>
+      <h3 class="testimonial-heading">Tailor</h3>
+      <p class="testimonial-subheading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque prae!</p>
+      <div class="icon">
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+       </svg>
+      </div>
+     </div>
+    </div>
+    </h1>
+   </div>
+  </section> -->
+  <!-- End of Testimonal Section -->
+
+
+  <!-- Start of Stat Section -->
+  <section id="stats">
+   <div class="container">
+    <h2 class="section-heading" data-outline="Stats">Stats</h2>
+    <div class="all-items">
+     <div class="item">
+      <h2 class="number">2022</h2>
+      <h3 class="stats-sub-heading">Graduate</h3>
+      <p>Selkirk College Web Development Program</p>
+     </div>
+     <div class="item">
+      <h2 class="number">2+</h2>
+      <h3 class="stats-sub-heading">Years of Experience</h3>
+      <p>Continous Learing with Personal Projects</p>
+     </div>
+     <div class="item">
+      <h2 class="number">4+</h2>
+      <h3 class="stats-sub-heading">Client Experience</h3>
+      <p>Collabrative Client Service Experience</p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End of Stat Section -->
+
+
+  <!-- About Section -->
+  <section id="about">
+   <div class="container">
+    <h2 class="section-heading" data-outline="about">About</h2>
+    <div class="wrapper">
+     <div class="left">
+      <div class="card">
+       <div class="img">
+        <img src="dogportrait.jpg" alt="dog">
+       </div>
+       <p class="card-desc">Meredith Waldock </p>
+       <h3 class="card-name">Selkirk College</h3>
+       <p class="card-sub-title">Web Development Graduate</p>
+      </div>
+     </div>
+     <div class="right">
+      <p class="subheading">Hi! This is Me! </p>
+      <h2 class="slogan">Freelance Web Developer</h2>
+      <p class="right-text">As a full stack web developer, I am proficient in both front-end and back-end technologies, allowing me to design and develop dynamic and responsive web applications. With experience in HTML, CSS, JavaScript, as well as server-side languages like Node.js and PHP. With an interest in Linux open-source software </p>
+      <div class="buttons">
+       <!-- <a href="#" class="primary-btn">Download Resume</a> -->
+       <!-- TODO Add link to resume download -->
+       <!-- <a href="#" class="primary-btn outline">Hire Me</a> -->
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End of About Section -->
+
+
+  <!-- Projects Sections -->
+  <section id="projects">
+   <div class="container">
+    <h2 class="section-heading" data-outline="Projects">Projects</h2>
+    <div class="all-items">
+     <div class="item">
+      <div class="left">
+       <div class="img">
+        <img src="rasppi.jpg" alt="project">
+       </div>
+      </div>
+      <div class="right">
+       <h2 class="project-title">RaspberryPi with VMware</h2>
+       <h3 class="project-sub-title">Secure Home Webserver</h3>
+       <p class="project-desc">This is my pet project! On my RaspberryPi 3 I am operating VM ware instances for my personal web server using LAMP. I experiment with CloudFlare tunneling, SSH & Docker from the CommandLine. Follow my journey on GitHub!</p>
+       <div class="buttons">
+        <a href="https://github.com/meredithw22" class="primary-btn">know more</a>
+        <a href="https://github.com/meredithw22" class="primary-btn outline external-link">
+         <span>preview</span>
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="left">
+       <div class="img">
+        <img src="frontend.jpg" alt="project">
+       </div>
+      </div>
+      <div class="right">
+       <h2 class="project-title">Front End Development</h2>
+       <h3 class="project-sub-title">Practice Portfolios.</h3>
+       <p class="project-desc">Here I practice Web Design with HTML, CSS, and JS for fully responsive portfolios!</p>
+       <div class="buttons">
+        <a href="https://github.com/meredithw22" class="primary-btn">know more</a>
+        <a href="https://github.com/meredithw22" class="primary-btn outline external-link">
+         <span>preview</span>
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="item">
+      <div class="left">
+       <div class="img">
+        <img src="project-3.jpg" alt="project">
+       </div>
+      </div>
+      <div class="right">
+       <h2 class="project-title">Full Stack</h2>
+       <h3 class="project-sub-title">Full Stack Apps</h3>
+       <p class="project-desc">Here are my smaller full stack projects using node.js, mongo.db, JS, & API integration</p>
+       <div class="buttons">
+        <a href="/miniprojects/calculator.html" class="primary-btn">know more</a>
+        <a href="https://github.com/meredithw22" class="primary-btn outline external-link">
+         <span>preview</span>
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End of Projects Section-->
+
+
+  <!-- Footer Section -->
+  <section id="footer">
+   <div class="container">
+    <footer>
+     <div class="col-1">
+      <div class="logo">
+       <a href="logo" alt="logo">
+        <img src="logo.jpg" alt="logo">
+       </a>
+      </div>
+      <p>Hand-coded Responsive Website</p>
+     </div>
+     <div class="col-2">
+      <h2 class="column-heading">Important <br>Links </h2>
+      <ul>
+       <li><a href="#hero">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <!-- <li><a href="#testimonial">Testimonial</a></li> -->
+       <li><a href="#projects">Projects</a></li>
+       <!-- <li><a data-text="Contact" href="./contact.html">Contact</a></li> -->
+      </ul>
+     </div>
+     
+     <!-- <div class="col-3">
+      <h2 class="column-heading">Contact <br>Info </h2>
+      <ul>
+        <li><a data-text="Contact" href="./contact.html">Contact Me</a></li>
+       <li><a href="#">+122344545</a></li> -->
+       <!-- <li><a href="#">Vancouver, Canada</a></li>
+      </ul>
+     </div> --> 
+     
+     <div class="col-3">
+      <h2 class="column-heading">Social <br> Links </h2>
+      <ul>
+       <!-- <li><a href="#">FB</a></li>
+       <li><a href="#">TW</a></li> -->
+       <li><a href="https://github.com/meredithw22">GitHub</a></li>
+       <li><a href="https://www.linkedin.com/in/meredith-waldock/">LinkedIn</a></li>
+      </ul>
+    </footer>
+   </div>
+  </section>
+  <section id="copyright">
+   <div class="container">
+    <p>CopyRight MaWaldock 2023</p>
+   </div>
+  </section>
+  <!-- End of Footer Section -->
+
+  <!-- JS script link -->
+  <script src="./main.js"></script>
+ </body>
 </html>
